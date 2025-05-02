@@ -7,13 +7,11 @@ I invite you to review the code. The repository includes:
 - Design System project with:
   - Configured Storybook
   - One design-system component - Badge
-  - Design Tokens (CSS Variables)
+  - CSS Variables
 - Main project with configured angular.json
 
 TODO:
 - Custom Control implementing ControlValueAccessor
-- more unit tests
-- end to end tests
 
 
 ## Project setup
