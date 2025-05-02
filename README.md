@@ -1,6 +1,6 @@
 # Angular Senior Showcase
-- Project: https://progmativ.github.io/angular-senior-showcase/
-- Storybook: https://6814cf1e0d75156d4a6a680d-fesbhleusg.chromatic.com/
+- Project live: https://progmativ.github.io/angular-senior-showcase/
+- Storybook live: https://6814cf1e0d75156d4a6a680d-fesbhleusg.chromatic.com/
 
 Welcome to my repository! Thank you for your interest in my job application.
 

@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build-storybook": "ng run design-system:build-storybook"
+    "build-storybook": "ng run design-system:build-storybook",
+    "deploy": "ng build --base-href /angular-senior-showcase/ && npx angular-cli-ghpages --dir=dist/angular-senior-showcase/browser"
   },
   "private": true,
   "dependencies": {
