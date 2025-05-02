@@ -1,4 +1,6 @@
 # Angular Senior Showcase
+- Project: https://progmativ.github.io/angular-senior-showcase/
+- Storybook: https://6814cf1e0d75156d4a6a680d-fesbhleusg.chromatic.com/
 
 Welcome to my repository! Thank you for your interest in my job application.
 
@@ -12,7 +14,6 @@ I invite you to review the code. The repository includes:
 
 TODO: https://github.com/progmativ/angular-senior-showcase/issues
 
-You can see deployed project here: https://progmativ.github.io/angular-senior-showcase/
 
 
 ## Project setup
@@ -60,8 +61,15 @@ ng build --base-href /angular-senior-showcase/
 ```
 
 ## Deploy
+
+### Application
 ```bash
 npx angular-cli-ghpages --dir=dist/angular-senior-showcase/browser
+```
+
+### Storybook
+```bash
+npx chromatic --project-token={project_token}
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
