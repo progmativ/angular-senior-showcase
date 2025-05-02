@@ -2,8 +2,8 @@
 
 ### ✨ Demo
 
-🔗 [See Storybook on Chromatic](https://6814cf1e0d75156d4a6a680d-fesbhleusg.chromatic.com/)  
-🔗 [Application Demo (GitHub Pages)](https://progmativ.github.io/angular-senior-showcase/)
+- 🔗 <a href="https://6814cf1e0d75156d4a6a680d-fesbhleusg.chromatic.com/" target="_blank">See Storybook on Chromatic</a>
+- 🔗 <a href="https://progmativ.github.io/angular-senior-showcase/" target="_blank">Application Demo (GitHub Pages)</a>
 
 Welcome to my repository! 
 
