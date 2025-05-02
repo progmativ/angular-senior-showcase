@@ -10,8 +10,9 @@ I invite you to review the code. The repository includes:
   - CSS Variables
 - Main project with configured angular.json
 
-TODO:
-- Custom Control implementing ControlValueAccessor
+TODO: https://github.com/progmativ/angular-senior-showcase/issues
+
+You can see deployed project here: https://progmativ.github.io/angular-senior-showcase/
 
 
 ## Project setup
@@ -51,6 +52,16 @@ For end-to-end (e2e) testing, run:
 
 ```bash
 ng e2e
+```
+
+## Build
+```bash
+ng build --base-href /angular-senior-showcase/
+```
+
+## Deploy
+```bash
+npx angular-cli-ghpages --dir=dist/angular-senior-showcase/browser
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
