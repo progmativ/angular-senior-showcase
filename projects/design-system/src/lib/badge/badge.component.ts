@@ -1,28 +1,30 @@
-import {ChangeDetectionStrategy, Component, HostBinding, Input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, HostBinding, input, Input} from '@angular/core';
 import {BadgeSize} from './badge.model';
 import {Color, CssVariable} from '../../models';
 
 @Component({
   selector: 'ui-badge',
-  imports: [],
   templateUrl: './badge.component.html',
   styleUrl: './badge.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
+  host: {
+    '[class]': `cssClasses()`,
+    '[style.background]': `backgroundColor()`,
+  }
 })
 export class BadgeComponent {
-  @HostBinding('class')
-  get cssClasses(): string[] {
+  public readonly size = input<BadgeSize>(BadgeSize.MEDIUM);
+  public readonly color = input<Color>(Color.PRIMARY);
+  public readonly label = input.required<string>()
+
+  public readonly cssClasses = computed(() => {
     return [
       'badge',
-      `badge--size-${this.size}`
-    ];
-  }
-  @Input()
-  size: BadgeSize = BadgeSize.MEDIUM;
-  @HostBinding('style.background-color')
-  @Input({ transform: (color: Color): CssVariable => `var(--${color})`, required: true})
-  color!: CssVariable;
-  @Input({required: true})
-  label!: string;
+      `badge--size-${this.size()}`
+    ]
+  });
+  public readonly backgroundColor = computed(() => {
+    return `var(--${this.color()})`;
+  })
 }
