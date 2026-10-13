@@ -11,10 +11,12 @@ import {Color, CssVariable} from '../../models';
   host: {
     '[class]': `cssClasses()`,
     '[style.background]': `backgroundColor()`,
+    '[aria-label]': `ariaLabel() || label()`
   }
 })
 export class BadgeComponent {
-  public readonly label = input.required<string>()
+  public readonly label = input.required<string>();
+  public readonly ariaLabel = input<string>();
   public readonly size = input<BadgeSize>(BadgeSize.MEDIUM);
   public readonly color = input<Color>(Color.PRIMARY);
 
