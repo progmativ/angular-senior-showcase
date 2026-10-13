@@ -6,6 +6,7 @@ import {effect, inject, Injectable, Renderer2, signal} from '@angular/core';
 })
 export class ThemeManager {
   public static LOCAL_STORAGE_KEY = 'theme';
+
   private readonly document = inject(DOCUMENT);
 
   public readonly theme = signal<string | null>(
