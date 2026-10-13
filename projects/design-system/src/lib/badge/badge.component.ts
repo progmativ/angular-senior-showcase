@@ -14,9 +14,9 @@ import {Color, CssVariable} from '../../models';
   }
 })
 export class BadgeComponent {
+  public readonly label = input.required<string>()
   public readonly size = input<BadgeSize>(BadgeSize.MEDIUM);
   public readonly color = input<Color>(Color.PRIMARY);
-  public readonly label = input.required<string>()
 
   public readonly cssClasses = computed(() => {
     return [
