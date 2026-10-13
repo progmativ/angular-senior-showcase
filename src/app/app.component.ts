@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {BadgeComponent} from '../../projects/design-system/src/lib/badge';
 import {Color} from '../../projects/design-system/src/models';
+import {ThemeManager} from '../../projects/design-system/src/core/theme-manager.service';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,10 @@ import {Color} from '../../projects/design-system/src/models';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular-senior-showcase';
+  protected readonly themeManager = inject(ThemeManager);
+
+  public readonly title = 'angular-senior-showcase';
   protected readonly Color = Color;
+
 }
+
